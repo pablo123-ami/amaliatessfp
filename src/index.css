@@ -5,9 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #aaa1ae; /* Fondo gris oscuro */
+  color: #eff5f4; /* Texto blanco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #dde0e0; /* Texto claro dentro de etiquetas <code> */
+}
+
+/* Estilo de tarjeta */
+.card {
+  background-color: #333a43; /* Fondo oscuro para la tarjeta */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  color: #eff5f4;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación en hover */
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffc107; /* Título en color dorado */
+}
+
+.card-content {
+  font-size: 1em;
+  color: #dde0e0;
+}
+
+.card code {
+  background-color: #444b52;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #ffc107; /* Código resaltado en dorado */
+}
+
+.card a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }
